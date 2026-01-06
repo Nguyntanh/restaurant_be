@@ -1,0 +1,57 @@
+### --- WINDOWS SYSTEM FILES --- ###
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+### --- JAVA & SPRING BOOT (MAVEN) --- ###
+target/
+# Giữ lại Maven Wrapper để chạy build trên CMD/PowerShell mà không cần cài Maven
+!.mvn/wrapper/maven-wrapper.jar
+build/
+*.class
+*.jar
+*.war
+*.ear
+*.log
+*.tmp
+
+### --- SECRETS & LOCAL CONFIG (CRITICAL) --- ###
+# Chặn cấu hình local để tránh ghi đè kết nối MySQL trên máy Windows của bạn
+.env
+.env.local
+src/main/resources/application-local.properties
+src/main/resources/application-dev.properties
+
+### --- JETBRAINS (IntelliJ IDEA) --- ###
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+### --- VS CODE --- ###
+.vscode/
+*.code-workspace
+.history/
+
+### --- ECLIPSE / STS --- ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache/
+
+### --- OTHER TOOLS --- ###
+HELP.md
+.nb-gradle/
